@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		53059726247AE13F00234348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53059724247AE13F00234348 /* Main.storyboard */; };
 		53059728247AE14000234348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53059727247AE14000234348 /* Assets.xcassets */; };
 		5305972B247AE14000234348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53059729247AE14000234348 /* LaunchScreen.storyboard */; };
+		53059734247AE3BD00234348 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 53059733247AE3BD00234348 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53059734247AE3BD00234348 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Bread Timer";
+			packageProductDependencies = (
+				53059733247AE3BD00234348 /* Lottie */,
+			);
 			productName = "Bread Timer";
 			productReference = 5305971B247AE13F00234348 /* Bread Timer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 53059712247AE13E00234348;
+			packageReferences = (
+				53059732247AE3BD00234348 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 5305971C247AE13F00234348 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53059732247AE3BD00234348 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53059733247AE3BD00234348 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53059732247AE3BD00234348 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53059713247AE13E00234348 /* Project object */;
 }
