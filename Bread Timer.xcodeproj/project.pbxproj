@@ -16,6 +16,7 @@
 		53059734247AE3BD00234348 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 53059733247AE3BD00234348 /* Lottie */; };
 		53059736247AEF0500234348 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53059735247AEF0500234348 /* TaskCell.swift */; };
 		53792192247AF7D200C11A06 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53792191247AF7D200C11A06 /* AddTaskController.swift */; };
+		53792194247C6D7300C11A06 /* tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53792193247C6D7300C11A06 /* tone.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		5305972C247AE14000234348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53059735247AEF0500234348 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		53792191247AF7D200C11A06 /* AddTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
+		53792193247C6D7300C11A06 /* tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tone.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		5305971D247AE13F00234348 /* Bread Timer */ = {
 			isa = PBXGroup;
 			children = (
+				53792193247C6D7300C11A06 /* tone.mp3 */,
 				53059727247AE14000234348 /* Assets.xcassets */,
 				53059729247AE14000234348 /* LaunchScreen.storyboard */,
 				53059724247AE13F00234348 /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53792194247C6D7300C11A06 /* tone.mp3 in Resources */,
 				5305972B247AE14000234348 /* LaunchScreen.storyboard in Resources */,
 				53059728247AE14000234348 /* Assets.xcassets in Resources */,
 				53059726247AE13F00234348 /* Main.storyboard in Resources */,
@@ -215,6 +219,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -275,6 +280,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

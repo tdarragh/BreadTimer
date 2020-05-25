@@ -27,5 +27,8 @@ class AddTaskController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Always adopt a light interface style.
+        overrideUserInterfaceStyle = .light
     }
 }

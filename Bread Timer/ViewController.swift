@@ -7,19 +7,77 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddTask, ChangeButton {
 
     var tasks: [Task] = []
+    
+    var minutes = 90
+    var timer = Timer()
+    var audioPlayer = AVAudioPlayer()
 
     @IBOutlet var tableView: UITableView!
     
+    @IBOutlet weak var label: UILabel!
+    
+    // SLIDER
+    @IBOutlet weak var sliderOutlet: UISlider!
+    @IBAction func slider(_ sender: UISlider) {
+        minutes = Int(sender.value)
+        label.text = String(minutes)
+    }
+    
+    // TIMER START
+    @IBOutlet weak var startOutlet: UIButton!
+    @IBAction func start(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
+        sliderOutlet.isHidden = true
+        startOutlet.isHidden = true
+    }
+    // WHEN TIMER IS DONE
+    @objc func counter() {
+        minutes -= 1
+        label.text = String(minutes)
+        if (minutes == 0) {
+            timer.invalidate()
+        sliderOutlet.isHidden = false
+        startOutlet.isHidden = false
+        audioPlayer.play()
+        audioPlayer.numberOfLoops = -1
+        }
+    }
+    
+    // TIMER STOP
+    @IBOutlet weak var stopOutlet: UIButton!
+    @IBAction func Stop(_ sender: Any) {
+        timer.invalidate()
+        minutes = 90
+        sliderOutlet.setValue(90, animated: true)
+        label.text = "90"
+        audioPlayer.stop()
+        sliderOutlet.isHidden = false
+        startOutlet.isHidden = false
+    }
+    
     override func viewDidLoad() {
+        
+        // Always adopt a light interface style.
+        overrideUserInterfaceStyle = .light
         
         // Appended Tasks
         tasks.append(Task(name: "tap circle to check off"))
         
         tasks.append(Task(name: "swipe left to delete"))
+        
+        //Audio Player
+        do {
+            let audioPath = Bundle.main.path(forResource: "tone", ofType: ".mp3")
+            try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+        }
+        catch {
+            //ERROR
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
