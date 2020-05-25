@@ -41,8 +41,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         label.text = String(minutes)
         if (minutes == 0) {
             timer.invalidate()
-        sliderOutlet.isHidden = false
-        startOutlet.isHidden = false
+        sliderOutlet.isHidden = true
+        startOutlet.isHidden = true
         audioPlayer.play()
         audioPlayer.numberOfLoops = -1
         }
@@ -67,8 +67,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // Appended Tasks
         tasks.append(Task(name: "tap circle to check off"))
-        
         tasks.append(Task(name: "swipe left to delete"))
+        tasks.append(Task(name: "1"))
+        tasks.append(Task(name: "2"))
+        tasks.append(Task(name: "3"))
+        tasks.append(Task(name: "4"))
+        tasks.append(Task(name: "5"))
+        tasks.append(Task(name: "6"))
+        tasks.append(Task(name: "7"))
+        tasks.append(Task(name: "8"))
+        tasks.append(Task(name: "9"))
+        tasks.append(Task(name: "10"))
+        tasks.append(Task(name: "THE END"))
         
         //Audio Player
         do {
