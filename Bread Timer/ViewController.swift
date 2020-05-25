@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             complete(true)
         }
         
-        deleteAction.backgroundColor = UIColor(red: 0.923, green: 0.378, blue: 0.318, alpha: 1.00)
+        deleteAction.backgroundColor = UIColor(red: 1, green: 0.326, blue: 0.326, alpha: 1.00)
         
         let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
         configuration.performsFirstActionWithFullSwipe = true
@@ -74,7 +74,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.tasks.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
         }
-        deleteAction.backgroundColor = UIColor(red: 0.923, green: 0.378, blue: 0.318, alpha: 1.00)
+        deleteAction.backgroundColor = UIColor(red: 1, green: 0.326, blue: 0.283, alpha: 1)
         return [deleteAction]
     }
     
