@@ -68,9 +68,9 @@
 				53059727247AE14000234348 /* Assets.xcassets */,
 				53059729247AE14000234348 /* LaunchScreen.storyboard */,
 				53059724247AE13F00234348 /* Main.storyboard */,
+				53059722247AE13F00234348 /* ViewController.swift */,
 				5305971E247AE13F00234348 /* AppDelegate.swift */,
 				53059720247AE13F00234348 /* SceneDelegate.swift */,
-				53059722247AE13F00234348 /* ViewController.swift */,
 				53792191247AF7D200C11A06 /* AddTaskController.swift */,
 				53059735247AEF0500234348 /* TaskCell.swift */,
 				5305972C247AE14000234348 /* Info.plist */,
@@ -313,6 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TimDarragh.Bread-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -331,6 +332,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TimDarragh.Bread-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

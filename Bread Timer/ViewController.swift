@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: TIMER START Outlet & Action
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func start(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
         sliderOutlet.isHidden = true
         startOutlet.isHidden = true
         untilNextStep.isHidden = false
@@ -89,6 +89,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    
+    @IBAction func info(_ sender: Any) {
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
     }
@@ -111,9 +115,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    // MARK: Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! AddTaskController
-        vc.delegate = self
+        let ViewController = segue.destination as! AddTaskController
+        ViewController.delegate = self
+        
     }
     
     // MARK: Swipe to delete here
