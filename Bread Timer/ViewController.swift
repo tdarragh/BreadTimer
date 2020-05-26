@@ -28,12 +28,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         label.text = String(minutes)
     }
     
+    // "until next step" PLACEHOLDER
+    @IBOutlet weak var untilNextStep: UILabel!
+    
+    
     // TIMER START
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func start(_ sender: Any) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
         sliderOutlet.isHidden = true
         startOutlet.isHidden = true
+        untilNextStep.isHidden = false
+        
     }
     // WHEN TIMER IS DONE
     @objc func counter() {
@@ -58,6 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         audioPlayer.stop()
         sliderOutlet.isHidden = false
         startOutlet.isHidden = false
+        untilNextStep.isHidden = true
     }
     
     override func viewDidLoad() {
@@ -65,20 +72,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Always adopt a light interface style.
         overrideUserInterfaceStyle = .light
         
+        untilNextStep.isHidden = true
+        
         // Appended Tasks
         tasks.append(Task(name: "tap circle to check off"))
         tasks.append(Task(name: "swipe left to delete"))
-        tasks.append(Task(name: "1"))
-        tasks.append(Task(name: "2"))
-        tasks.append(Task(name: "3"))
-        tasks.append(Task(name: "4"))
-        tasks.append(Task(name: "5"))
-        tasks.append(Task(name: "6"))
-        tasks.append(Task(name: "7"))
-        tasks.append(Task(name: "8"))
-        tasks.append(Task(name: "9"))
-        tasks.append(Task(name: "10"))
-        tasks.append(Task(name: "THE END"))
         
         //Audio Player
         do {
