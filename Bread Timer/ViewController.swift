@@ -125,13 +125,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: Swipe to delete here
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _, _, complete in
+        let deleteAction = UIContextualAction(style: .destructive, title: "delete") { _, _, complete in
             self.tasks.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
             complete(true)
         }
         
         deleteAction.backgroundColor = UIColor(red: 1, green: 0.326, blue: 0.326, alpha: 1.00)
+        deleteAction.image = UIImage(systemName: "trash.fill")
         
         let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
         configuration.performsFirstActionWithFullSwipe = true

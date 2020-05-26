@@ -31,6 +31,10 @@
 		53059735247AEF0500234348 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		53792191247AF7D200C11A06 /* AddTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
 		53792193247C6D7300C11A06 /* tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tone.mp3; sourceTree = "<group>"; };
+		53BBE7BC247DB6970006FDBC /* SpaceMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-Bold.ttf"; sourceTree = "<group>"; };
+		53BBE7BD247DB6970006FDBC /* SpaceMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-Italic.ttf"; sourceTree = "<group>"; };
+		53BBE7BE247DB6970006FDBC /* SpaceMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-Regular.ttf"; sourceTree = "<group>"; };
+		53BBE7BF247DB6980006FDBC /* SpaceMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,10 @@
 		5305971D247AE13F00234348 /* Bread Timer */ = {
 			isa = PBXGroup;
 			children = (
+				53BBE7BC247DB6970006FDBC /* SpaceMono-Bold.ttf */,
+				53BBE7BF247DB6980006FDBC /* SpaceMono-BoldItalic.ttf */,
+				53BBE7BD247DB6970006FDBC /* SpaceMono-Italic.ttf */,
+				53BBE7BE247DB6970006FDBC /* SpaceMono-Regular.ttf */,
 				53792193247C6D7300C11A06 /* tone.mp3 */,
 				53059727247AE14000234348 /* Assets.xcassets */,
 				53059729247AE14000234348 /* LaunchScreen.storyboard */,
