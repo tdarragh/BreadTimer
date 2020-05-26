@@ -113,6 +113,13 @@
                                     <constraint firstAttribute="height" constant="54" id="zwi-5T-twh"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="until next step" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMF-7t-cSY">
+                                <rect key="frame" x="20" y="651" width="374" height="22"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.51564747099999997" green="0.98698681590000004" blue="0.75683420899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="90" minValue="1" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="1jf-A1-h7u">
                                 <rect key="frame" x="18" y="646" width="378" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.51564747099999997" green="0.98698681590000004" blue="0.75683420899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -121,13 +128,6 @@
                                     <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="KU1-7n-Wqu"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="until next step" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMF-7t-cSY">
-                                <rect key="frame" x="20" y="651" width="374" height="21.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.51564747099999997" green="0.98698681590000004" blue="0.75683420899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

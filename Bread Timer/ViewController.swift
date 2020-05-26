@@ -21,18 +21,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var label: UILabel!
     
-    // SLIDER
+    // MARK: SLIDER Outlet & Action
     @IBOutlet weak var sliderOutlet: UISlider!
     @IBAction func slider(_ sender: UISlider) {
         minutes = Int(sender.value)
         label.text = String(minutes)
     }
     
-    // "until next step" PLACEHOLDER
+    // MARK: "until next step" PLACEHOLDER
     @IBOutlet weak var untilNextStep: UILabel!
     
     
-    // TIMER START
+    // MARK: TIMER START Outlet & Action
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func start(_ sender: Any) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         untilNextStep.isHidden = false
         
     }
-    // WHEN TIMER IS DONE
+    // MARK: WHEN TIMER IS DONE
     @objc func counter() {
         minutes -= 1
         label.text = String(minutes)
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    // TIMER STOP
+    // MARK: TIMER STOP
     @IBOutlet weak var stopOutlet: UIButton!
     @IBAction func Stop(_ sender: Any) {
         timer.invalidate()
@@ -67,6 +67,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         untilNextStep.isHidden = true
     }
     
+    // MARK: viewDidLoad
     override func viewDidLoad() {
         
         // Always adopt a light interface style.
@@ -115,7 +116,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc.delegate = self
     }
     
-    // Swipe to delete here
+    // MARK: Swipe to delete here
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _, _, complete in
