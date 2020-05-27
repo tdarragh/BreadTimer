@@ -17,6 +17,7 @@
 		53059736247AEF0500234348 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53059735247AEF0500234348 /* TaskCell.swift */; };
 		53792192247AF7D200C11A06 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53792191247AF7D200C11A06 /* AddTaskController.swift */; };
 		53792194247C6D7300C11A06 /* tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53792193247C6D7300C11A06 /* tone.mp3 */; };
+		53E7E0A4247F191B00EE6116 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E7E0A3247F191B00EE6116 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		53BBE7BD247DB6970006FDBC /* SpaceMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-Italic.ttf"; sourceTree = "<group>"; };
 		53BBE7BE247DB6970006FDBC /* SpaceMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-Regular.ttf"; sourceTree = "<group>"; };
 		53BBE7BF247DB6980006FDBC /* SpaceMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-BoldItalic.ttf"; sourceTree = "<group>"; };
+		53E7E0A3247F191B00EE6116 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				5305971E247AE13F00234348 /* AppDelegate.swift */,
 				53059720247AE13F00234348 /* SceneDelegate.swift */,
 				53792191247AF7D200C11A06 /* AddTaskController.swift */,
+				53E7E0A3247F191B00EE6116 /* InfoViewController.swift */,
 				53059735247AEF0500234348 /* TaskCell.swift */,
 				5305972C247AE14000234348 /* Info.plist */,
 			);
@@ -168,6 +171,7 @@
 				53792192247AF7D200C11A06 /* AddTaskController.swift in Sources */,
 				53059723247AE13F00234348 /* ViewController.swift in Sources */,
 				5305971F247AE13F00234348 /* AppDelegate.swift in Sources */,
+				53E7E0A4247F191B00EE6116 /* InfoViewController.swift in Sources */,
 				53059721247AE13F00234348 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

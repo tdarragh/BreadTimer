@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: TIMER START Outlet & Action
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func start(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
         sliderOutlet.isHidden = true
         startOutlet.isHidden = true
         untilNextStep.isHidden = false
