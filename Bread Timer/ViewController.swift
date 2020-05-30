@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Lottie
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddTask, ChangeButton {
 
@@ -51,6 +52,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         startOutlet.isHidden = true
         audioPlayer.play()
         audioPlayer.numberOfLoops = -1
+            
+        // MARK: Local Notification??
         }
     }
     
@@ -86,6 +89,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         catch {
             //ERROR
+            
+        // User Notification
+            
         }
     }
     
