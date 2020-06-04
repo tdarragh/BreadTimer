@@ -39,7 +39,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
         sliderOutlet.isHidden = true
         startOutlet.isHidden = true
-        untilNextStep.isHidden = false
+        untilNextStep.isHidden = true
+        animationView.isHidden = false
         
     }
     // MARK: WHEN TIMER IS DONE
@@ -68,19 +69,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         sliderOutlet.isHidden = false
         startOutlet.isHidden = false
         untilNextStep.isHidden = true
+        animationView.isHidden = true
     }
     
+    // MARK: TIMER ANIMATION
+    @IBOutlet weak var animationView: AnimationView!
+    
+    @IBOutlet weak var animationCover: UIView!
+    
     // MARK: viewDidLoad
-    override func viewDidLoad() {
+    override func viewWillAppear(_: Bool) {
+        super.viewWillAppear(true)
+
+    // override func viewDidLoad() {
+        //super.viewDidLoad()
+        
+        startAnimation()
         
         // Always adopt a light interface style.
         overrideUserInterfaceStyle = .light
         
         untilNextStep.isHidden = true
+        //animationView.isHidden = false
+        
         
         // Appended Tasks
+        tasks.append(Task(name: "add a baking task"))
         tasks.append(Task(name: "tap circle to check off"))
-        tasks.append(Task(name: "swipe left to delete"))
+        tasks.append(Task(name: "   swipe left to delete"))
+
         
         //Audio Player
         do {
@@ -97,6 +114,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     @IBAction func info(_ sender: Any) {
+    }
+    
+    
+    // MARK: Lottie Animation FUNC
+    func startAnimation () {
+        animationView.animation = Animation.named("loafyTimer")
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.play()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

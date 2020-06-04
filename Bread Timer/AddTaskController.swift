@@ -42,6 +42,7 @@ class AddTaskController: UIViewController {
         // Default Back Button
         if let topItem = self.navigationController?.navigationBar.topItem {
            topItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+            
         }
         
     }
