@@ -203,9 +203,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavesGreen" translatesAutoresizingMaskIntoConstraints="NO" id="Rpv-Pi-GEs">
                                 <rect key="frame" x="0.0" y="20" width="414" height="292"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bready02" translatesAutoresizingMaskIntoConstraints="NO" id="svH-Jz-30Q">
-                                <rect key="frame" x="73" y="546" width="268" height="262"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HpL-Uj-xLT">
                                 <rect key="frame" x="20" y="100" width="374" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,22 +233,27 @@
                                     <action selector="addAction:" destination="JUM-3U-8D8" eventType="touchUpInside" id="47z-Ka-6kb"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgV-Ca-VYc" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="57" y="508" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="svH-Jz-30Q" secondAttribute="bottom" id="0EN-2c-OZx"/>
+                            <constraint firstItem="mgV-Ca-VYc" firstAttribute="top" secondItem="Rpv-Pi-GEs" secondAttribute="bottom" constant="196" id="0vO-kL-5KP"/>
                             <constraint firstItem="Rpv-Pi-GEs" firstAttribute="top" secondItem="GNE-AJ-1lt" secondAttribute="top" constant="20" id="75v-21-Ifl"/>
                             <constraint firstItem="GNE-AJ-1lt" firstAttribute="trailing" secondItem="5Be-SN-T0E" secondAttribute="trailing" constant="20" id="BC0-i6-qVB"/>
                             <constraint firstItem="HpL-Uj-xLT" firstAttribute="leading" secondItem="GNE-AJ-1lt" secondAttribute="leading" constant="20" id="DMy-mn-aDD"/>
                             <constraint firstItem="Rpv-Pi-GEs" firstAttribute="leading" secondItem="GNE-AJ-1lt" secondAttribute="leading" id="E92-R4-gNq"/>
                             <constraint firstItem="spc-X9-EK1" firstAttribute="top" secondItem="GNE-AJ-1lt" secondAttribute="top" constant="100" id="KZi-Mv-EDC"/>
-                            <constraint firstItem="GNE-AJ-1lt" firstAttribute="trailing" secondItem="svH-Jz-30Q" secondAttribute="trailing" constant="73" id="Ksk-Jb-o2J"/>
+                            <constraint firstAttribute="bottom" secondItem="mgV-Ca-VYc" secondAttribute="bottom" id="NM6-2f-fPq"/>
                             <constraint firstItem="5Be-SN-T0E" firstAttribute="top" secondItem="HpL-Uj-xLT" secondAttribute="bottom" constant="24" id="Qxa-BK-wgm"/>
                             <constraint firstItem="HpL-Uj-xLT" firstAttribute="top" secondItem="GNE-AJ-1lt" secondAttribute="top" constant="100" id="Tzu-UL-t2D"/>
+                            <constraint firstItem="mgV-Ca-VYc" firstAttribute="leading" secondItem="GNE-AJ-1lt" secondAttribute="leading" constant="57" id="ZVh-ga-mLt"/>
                             <constraint firstItem="GNE-AJ-1lt" firstAttribute="trailing" secondItem="spc-X9-EK1" secondAttribute="trailing" constant="20" id="csR-FL-ltS"/>
                             <constraint firstItem="GNE-AJ-1lt" firstAttribute="trailing" secondItem="HpL-Uj-xLT" secondAttribute="trailing" constant="20" id="nO6-Zt-6fZ"/>
                             <constraint firstItem="spc-X9-EK1" firstAttribute="leading" secondItem="GNE-AJ-1lt" secondAttribute="leading" constant="20" id="p1v-BZ-dU2"/>
-                            <constraint firstItem="svH-Jz-30Q" firstAttribute="leading" secondItem="GNE-AJ-1lt" secondAttribute="leading" constant="73" id="rT0-nu-rop"/>
+                            <constraint firstItem="GNE-AJ-1lt" firstAttribute="trailing" secondItem="mgV-Ca-VYc" secondAttribute="trailing" constant="57" id="pEu-lZ-SAk"/>
                             <constraint firstItem="Rpv-Pi-GEs" firstAttribute="trailing" secondItem="GNE-AJ-1lt" secondAttribute="trailing" id="wnX-f3-fhj"/>
                             <constraint firstItem="5Be-SN-T0E" firstAttribute="leading" secondItem="GNE-AJ-1lt" secondAttribute="leading" constant="20" id="xgf-b2-8Xp"/>
                         </constraints>
@@ -267,6 +269,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="animationView" destination="mgV-Ca-VYc" id="i2M-mc-YUR"/>
                         <outlet property="taskNameOutlet" destination="spc-X9-EK1" id="6Rt-jG-uzv"/>
                     </connections>
                 </viewController>
@@ -286,8 +289,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqc-e3-Mbu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1600"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wqc-e3-Mbu">
+                                        <rect key="frame" x="0.0" y="-109" width="414" height="1600"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="UMS-Ys-F0A">
                                                 <rect key="frame" x="-3" y="-3" width="420" height="241"/>
@@ -451,7 +454,7 @@ Bread Timer Sticker Pack</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="jFa-VL-gXG"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.51564747099999997" green="0.98698681590000004" blue="0.75683420899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1688880324" green="0.1679711938" blue="0.2078480124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="nuB-LP-WMj"/>
                     </view>
                     <navigationItem key="navigationItem" id="czf-yz-fsf"/>
@@ -488,7 +491,6 @@ Bread Timer Sticker Pack</string>
     <resources>
         <image name="IG" width="50" height="50"/>
         <image name="Twitter" width="50" height="50"/>
-        <image name="bready02" width="268" height="262"/>
         <image name="circle" width="30.5" height="30.5"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="infoFooter" width="414" height="488"/>

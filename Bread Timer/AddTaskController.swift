@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 protocol AddTask {
     func addTask(name: String)
@@ -14,6 +15,9 @@ protocol AddTask {
 
 class AddTaskController: UIViewController {
 
+
+    @IBOutlet weak var animationView: AnimationView!
+    
     @IBAction func addAction(_ sender: Any) {
         if taskNameOutlet.text != "" {
             delegate?.addTask(name: taskNameOutlet.text!)
@@ -25,8 +29,12 @@ class AddTaskController: UIViewController {
     
     var delegate: AddTask?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_: Bool) {
+        super.viewWillAppear(true)
+        // super.viewDidLoad()
+        startAnimation()
+        
+        
         
         // Always adopt a light interface style.
         overrideUserInterfaceStyle = .light
@@ -35,5 +43,13 @@ class AddTaskController: UIViewController {
         if let topItem = self.navigationController?.navigationBar.topItem {
            topItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         }
+        
+    }
+    
+    func startAnimation() {
+        animationView.animation = Animation.named("loafyAnim")
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.play()
     }
 }

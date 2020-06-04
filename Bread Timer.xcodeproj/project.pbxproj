@@ -15,6 +15,7 @@
 		5305972B247AE14000234348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53059729247AE14000234348 /* LaunchScreen.storyboard */; };
 		53059734247AE3BD00234348 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 53059733247AE3BD00234348 /* Lottie */; };
 		53059736247AEF0500234348 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53059735247AEF0500234348 /* TaskCell.swift */; };
+		530D76CD24899A0400FAA1D6 /* loafyAnim.json in Resources */ = {isa = PBXBuildFile; fileRef = 530D76CC24899A0400FAA1D6 /* loafyAnim.json */; };
 		53792192247AF7D200C11A06 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53792191247AF7D200C11A06 /* AddTaskController.swift */; };
 		53792194247C6D7300C11A06 /* tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53792193247C6D7300C11A06 /* tone.mp3 */; };
 		53E7E0A4247F191B00EE6116 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E7E0A3247F191B00EE6116 /* InfoViewController.swift */; };
@@ -30,6 +31,7 @@
 		5305972A247AE14000234348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5305972C247AE14000234348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53059735247AEF0500234348 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		530D76CC24899A0400FAA1D6 /* loafyAnim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loafyAnim.json; sourceTree = "<group>"; };
 		53792191247AF7D200C11A06 /* AddTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
 		53792193247C6D7300C11A06 /* tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tone.mp3; sourceTree = "<group>"; };
 		53BBE7BC247DB6970006FDBC /* SpaceMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-Bold.ttf"; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				5305971D247AE13F00234348 /* Bread Timer */,
 				5305971C247AE13F00234348 /* Products */,
+				530D76CB248998BE00FAA1D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +73,7 @@
 		5305971D247AE13F00234348 /* Bread Timer */ = {
 			isa = PBXGroup;
 			children = (
+				530D76CC24899A0400FAA1D6 /* loafyAnim.json */,
 				53BBE7BC247DB6970006FDBC /* SpaceMono-Bold.ttf */,
 				53BBE7BF247DB6980006FDBC /* SpaceMono-BoldItalic.ttf */,
 				53BBE7BD247DB6970006FDBC /* SpaceMono-Italic.ttf */,
@@ -87,6 +91,13 @@
 				5305972C247AE14000234348 /* Info.plist */,
 			);
 			path = "Bread Timer";
+			sourceTree = "<group>";
+		};
+		530D76CB248998BE00FAA1D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			files = (
 				53792194247C6D7300C11A06 /* tone.mp3 in Resources */,
 				5305972B247AE14000234348 /* LaunchScreen.storyboard in Resources */,
+				530D76CD24899A0400FAA1D6 /* loafyAnim.json in Resources */,
 				53059728247AE14000234348 /* Assets.xcassets in Resources */,
 				53059726247AE13F00234348 /* Main.storyboard in Resources */,
 			);
@@ -321,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7W8TM3A96;
 				INFOPLIST_FILE = "Bread Timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7W8TM3A96;
 				INFOPLIST_FILE = "Bread Timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
