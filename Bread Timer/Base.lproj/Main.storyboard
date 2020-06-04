@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sRd-Cu-dLS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="424.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="452.5"/>
                                 <color key="backgroundColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
@@ -73,16 +73,16 @@
                                 </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavesGray" translatesAutoresizingMaskIntoConstraints="NO" id="joz-m2-Zkd">
-                                <rect key="frame" x="0.0" y="475.5" width="414" height="116"/>
+                                <rect key="frame" x="0.0" y="498.5" width="414" height="98"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEM-wM-HxQ">
-                                <rect key="frame" x="20" y="600" width="374" height="24"/>
+                                <rect key="frame" x="20" y="605" width="374" height="19"/>
                                 <fontDescription key="fontDescription" name="SpaceMono-Regular" family="Space Mono" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="set timer for:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4R-Yc-3IL">
-                                <rect key="frame" x="20" y="442.5" width="374" height="24"/>
+                                <rect key="frame" x="20" y="470.5" width="374" height="19"/>
                                 <fontDescription key="fontDescription" name="SpaceMono-Regular" family="Space Mono" pointSize="16"/>
                                 <color key="textColor" red="0.51564747099999997" green="0.98698681590000004" blue="0.75683420899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -95,7 +95,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcH-KW-FgH">
-                                <rect key="frame" x="20" y="481.5" width="374" height="104"/>
+                                <rect key="frame" x="20" y="504.5" width="374" height="86"/>
                                 <fontDescription key="fontDescription" name="SpaceMono-Regular" family="Space Mono" pointSize="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -303,8 +303,8 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xol-C7-wnA">
                                                 <rect key="frame" x="93" y="404" width="229" height="65.5"/>
-                                                <string key="text">Share your bakes 
-#BreadTimerApp</string>
+                                                <string key="text">#BreadTimerApp
+Share your bakes</string>
                                                 <fontDescription key="fontDescription" name="SpaceMono-Regular" family="Space Mono" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -318,7 +318,7 @@ and happy baking!</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tm8-Cu-qqi">
-                                                <rect key="frame" x="20" y="1498.5" width="374" height="54"/>
+                                                <rect key="frame" x="20" y="1486.5" width="374" height="54"/>
                                                 <color key="backgroundColor" red="0.51564747099999997" green="0.98698681590000004" blue="0.75683420899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="3bw-xV-DPR"/>
@@ -332,7 +332,7 @@ and happy baking!</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRK-eX-cav">
-                                                <rect key="frame" x="20" y="1408" width="374" height="50.5"/>
+                                                <rect key="frame" x="20" y="1396" width="374" height="50.5"/>
                                                 <string key="text">App created by:
 Tim Darragh ©2020</string>
                                                 <fontDescription key="fontDescription" name="SpaceMono-Regular" family="Space Mono" pointSize="17"/>
@@ -340,12 +340,12 @@ Tim Darragh ©2020</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhy-VG-FIe">
-                                                <rect key="frame" x="21" y="1227" width="374" height="130.5"/>
+                                                <rect key="frame" x="21" y="1227" width="374" height="118.5"/>
                                                 <string key="text">“How can a nation be 
 great if its bread 
 tastes like Kleenex?”
 — Julia Child</string>
-                                                <fontDescription key="fontDescription" name="SpaceMono-Italic" family="Space Mono" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="SpaceMono-Italic" family="Space Mono" pointSize="20"/>
                                                 <color key="textColor" red="0.92330777649999995" green="0.37782827019999998" blue="0.31761628390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -377,7 +377,7 @@ tastes like Kleenex?”
                                                     <action selector="twitterButton:" destination="Lfk-X7-10g" eventType="touchUpInside" id="CUl-SD-RHV"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bready" translatesAutoresizingMaskIntoConstraints="NO" id="dQ6-Fo-eme">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stickers" translatesAutoresizingMaskIntoConstraints="NO" id="dQ6-Fo-eme">
                                                 <rect key="frame" x="20" y="636" width="373" height="300"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="duX-88-ZLX"/>
@@ -385,7 +385,7 @@ tastes like Kleenex?”
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P2-CK-phn">
                                                 <rect key="frame" x="20" y="976" width="374" height="50.5"/>
-                                                <string key="text">Download the 
+                                                <string key="text">Download the free
 Bread Timer Sticker Pack</string>
                                                 <fontDescription key="fontDescription" name="SpaceMono-Regular" family="Space Mono" pointSize="17"/>
                                                 <color key="textColor" red="0.92330777649999995" green="0.37782827019999998" blue="0.31761628390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -486,7 +486,6 @@ Bread Timer Sticker Pack</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Bready" width="558" height="558"/>
         <image name="IG" width="50" height="50"/>
         <image name="Twitter" width="50" height="50"/>
         <image name="bready02" width="268" height="262"/>
@@ -497,6 +496,7 @@ Bread Timer Sticker Pack</string>
         <image name="infoIcon" width="414" height="167"/>
         <image name="infoSocial" width="414" height="195"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="stickers" width="373" height="300"/>
         <image name="wavesGray" width="414" height="98"/>
         <image name="wavesGreen" width="414" height="292"/>
     </resources>
