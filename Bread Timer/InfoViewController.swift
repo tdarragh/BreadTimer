@@ -21,7 +21,7 @@ class InfoViewController: UIViewController {
     }
     
     @IBAction func stickerButtom(_ sender: UIButton) {
-         UIApplication.shared.open(URL (string: "https://apps.apple.com/us/app/maus-cat-stickers/id1386613018")! as URL, options: [:], completionHandler: nil)
+         UIApplication.shared.open(URL (string: "https://apps.apple.com/us/app/bread-timer-stickers/id1516660027?ls=1")! as URL, options: [:], completionHandler: nil)
     }
     
     
